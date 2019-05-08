@@ -1,0 +1,215 @@
+\let\latexnofiles\nofiles
+\let\nofiles\relax
+\documentclass[margin,line,palatino,courier,10pt]{res}
+
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{hhline}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage[nodayofweek]{datetime}
+\newdateformat{mydate}{\twodigit{\THEDAY}{ }\shortmonthname[\THEMONTH], \THEYEAR}
+\usepackage{graphicx}
+\usepackage{etaremune}
+
+
+\definecolor{darkgrey}{rgb}{0.169, 0.169, 0.169}
+\hypersetup{colorlinks		=	true, 
+					linkcolor 		= 	darkgrey, 
+					urlcolor			= 	darkgrey,
+					citecolor 		= 	darkgrey,
+            			anchorcolor 	= 	darkgrey,
+            			filecolor		= 	darkgrey}
+
+\newcommand*{\bigDot}{\raisebox{-0.25ex}{\scalebox{2.1}{$\cdot$}}}
+
+%%% LINKS GALORE %%%
+\newcommand{\CU}{http://climatesociety.ei.columbia.edu/}
+\newcommand{\Midd}{http://www.middlebury.edu/academics/es}
+\newcommand{\NYU}{https://shanghai.nyu.edu/}
+\newcommand{\GEO}{https://geo.floods.global/}
+\newcommand{\SatWIN}{https://satwin.iri.columbia.edu/}
+\newcommand{\HM}{https://youtube.com/HotMessPBS/}
+
+
+\textheight=9.0in
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{.5 cm}
+\fancyhf{}
+\rhead{		\textsf{ 
+				\href{https://twitter.com/zentouro}{@zentouro} 
+				\ \ \ \includegraphics[height=9pt]{twitter.png}  \\
+				\href{https://zentouro.ldeo.columbia.edu}{\ \ http://zentouro.ldeo.columbia.edu} 				 				\ \ \includegraphics[height=10pt]{globe.png} \\
+				\href{mailto:miriam@iri.columbia.edu} {miriam@iri.columbia.edu}	
+				\ \ \includegraphics[height=9pt]{mail.png} 	\\
+				\ \ 
+				}}
+
+\lfoot{\textit{\footnotesize \\ Updated: \today}}
+\rfoot{{\footnotesize \textcolor{darkgrey}{\textbf{Miriam Nielsen}} \\ Curriculum Vit\ae, Page \textbf{[\thepage]} of 2}}
+
+\newenvironment{list1}{
+	\begin{list}{\ding{113}}{%
+		\setlength{\itemsep}{0in}
+		\setlength{\parsep}{0in} \setlength{\parskip}{0in}
+		\setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+		\setlength{\leftmargin}{0.17in}}}{\end{list}}
+		
+\newenvironment{list2}{
+	\begin{list}{$\bullet$}{%
+		\setlength{\itemsep}{0in}
+		\setlength{\parsep}{0in} \setlength{\parskip}{0in}
+		\setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+		\setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\begin{document}
+
+%% Figure out how to add twitter, email, website to tab across from name 
+\name{
+	{\textsf{\huge MIRIAM\textcolor{Red}{N}IELSEN}} 
+	\hspace*{.1in}
+	\vspace*{.1in}
+	}
+
+
+\begin{resume}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\sc \textcolor{Red}{\large{Research Interests}}}
+climate variability $\bigDot$  hydroclimate $\bigDot$  climate-ecosystem interactions $\bigDot$ attribution science $\bigDot$ risk assessment $\bigDot$ science communication  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{0.15in}
+\section{\sc \textcolor{Red}{\large{Education}}}
+
+{\bf \href{\CU}{Columbia University}}, M.A. Climate \& Society \hfill {$2018$}
+\\
+    \vspace*{-.15in} % this space is required to make the Universities close together
+    % this is the format for the shorter version
+    %\vspace{-.3cm} % pulls the emph section up a bit and looks nicer
+  
+{\bf \href{\Midd}{Middlebury College}}, B.A. Environmental Studies, focus in Creative Arts 
+\hfill {$2014$}
+\\
+    Thesis: How online activism promotes environmental good (multimedia).   \\ 
+    Minors: Computer Science, Chinese. 
+ 
+
+\section{\sc \textcolor{Red}{\large{Research Experience}}}
+\vspace*{0.05in}
+\begin{tabular}{@{}p{1 in}p{4in}}
+Summer 2019  & \textbf{International Research Institute for Climate \& Society (IRI)}, Associate Researcher\\
+& \href{GEO}{Systematic review of flood and related hazard vulnerability. Developing a database of flash flood events and risk response. The project is aligned with NASA and the Group on Earth Observations (GEO) 2017-2019 work program for the Initiative for Global Flood Risk Monitoring.} \\
+& \hspace{0.2in} Advisor: Kruczkiewicz, IRI.\\
+& \href{SatWIN}{Designing and communicating SatWIN-ALERT project tools.} \\
+& \hspace{0.2in} Advisor: Dr. Helen Greatrex, IRI. \& 
+\\
+Summer 2018 & \textbf{NASA Disasters Program}, Research Intern  \\
+& Analysis of global flash flood risk and response.  \\
+& \hspace{0.2in} Advisors:  Dr. Shanna McClain, NASA, \\
+& \hspace{.82in} Andrew Kruczkiewicz, IRI. \\
+
+\end{tabular}
+
+\section{\sc \textcolor{Red}{\large{Industry Experience}}}
+\vspace*{0.05in}
+\begin{tabular}{@{}p{1 in}p{4in}}
+$2017 - \text{Present}$  & \textbf{PBS Digital Studios}, Writer \& Co-host of \href{HM}{Hot Mess}\\
+& Researching and communicating climate change for an online audience. Primarily covering stories about how climate change is affecting us and how we are adapting.\\
+\\
+$2015 - 2017$ & \textbf{The Verge}, Lead Science Director  \\
+& Creative and editorial director for science video content. \\
+& Research, write, direct, and host videos for multiple platforms. \\
+& Launched "Verge Science" on Facebook and “Space Craft” on YouTube. \\
+& Post Production supervisor for the first 360 video interview with First Lady Michelle Obama. \\
+
+\end{tabular}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\sc \large{\textcolor{Red}{Publications}}}
+
+\textit{\textbf{Submitted/in Preparation}}
+\vspace*{-0.1in}\\
+\begin{etaremune}[leftmargin=.2in,topsep=0in,parsep=0in]
+\item Kruczkiewicz, Andrew; Braun, Mélody; Greatrex, Helen; \textbf{Nielsen, Miriam}; Hoffman-Hernandez, Laura; Llamanzares, Brian; Flamig, Zachary; McClain, Shanna: Moving from Availability to Use of Flood Risk and Flood Monitoring Data to Inform Decision Making for Preparedness and Response. AGU Books, (\textit{in Review 2018.})
+\end{etaremune}
+
+\section{\sc \textcolor{Red}{\large{Invited Presentations}}}
+\begin{etaremune}[leftmargin=.2in,topsep=0in,parsep=0in]
+\item  Kruczkiewicz, Andrew; \textbf{Nielsen, Miriam},  Experiencing discrepancies in “reputable data” in the disaster management cycle. \textit{UN Group of Experts on Geographical Names: First Session}, NY, NY (May 2019). 
+\item  \textbf{Nielsen, Miriam}, Llamanzares, Brian, Global Flash Flood Risk. \textit{NASA Goddard Space Flight Center}, Greenbelt, MD (August 2018). 
+\item  \textbf{Nielsen, Miriam}, Llamanzares, Brian, Investigating Flash Flood Risk. \textit{The World Bank}, Washington, DC (July 2018). 
+\item  \textbf{Nielsen, Miriam}, Climate Change but make it Fashion. \textit{PBS Nerd Night, VidCon}, Anaheim, CA (July 2018).
+\item  \textbf{Nielsen, Miriam}, Ashe, Jabril, Harrison, Michael, Taking Your Educational Videos to the Next Level. \textit{SXSWedu}, Austin, TX (March 2018). \href{https://schedule.sxswedu.com/2018/events/PP76461"}{[Link]}
+\item  \textbf{Nielsen, Miriam}, Environmental Sustainability through a Creative Lens. \textit{Rohatyn Center for Global Affairs Symposium}, Middlebury, VT (January, May 2014). 
+\end{etaremune}
+
+\section{\sc \textcolor{Red}{\large{Teaching \\ \& Outreach}}}
+
+\textit{\textbf{Middlebury College}}
+\vspace*{0.05in}\\
+\begin{tabular}{@{}p{1in}p{4in}}
+$2013$ & Teaching Assistant, Mathematical Foundations of Computing \\
+$2012 - 2014$ & Teaching Assistant, Introduction to Computing \\
+\end{tabular}
+
+\textit{\textbf{Additional Activities}}
+\vspace*{0.05in}\\
+\begin{tabular}{@{}p{1in}p{4in}}
+$2019$ & Guest Critic, NYU Climate and Design \\
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\sc \textcolor{Red}{\large{Mentorships \\ \& Awards}}}
+\vspace*{0.1in}
+\begin{tabular}{@{}p{1in}p{4in}}
+Summer 2019 & Union of Concerned Scientist Advocacy Mentorship\\
+2015 \& 2016 &  Vidcon Creator Mentorship\\
+2012 & Mellon Foundation Research Grant\\
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\sc \textcolor{Red}{\large{Technical \\ Skills}}}
+\vspace*{0.05in}
+\begin{tabular}{@{}p{.9in}p{6in}}
+
+Programming:& Python, \texttt{MATLAB}, \texttt{R}, HTML, CSS \LaTeX \\
+Software/Tools:&  arcGIS, qGIS, Adobe Creative Suite, Git, IRI Data Library \\\\
+
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\sc \textcolor{Red}{\large{Selected  \\News \\ \& Media}}}
+\vspace*{0.04in}
+\begin{tabular}{@{}p{0.8in}p{4in}}
+June $2018$ & \textit{Hot Mess PBS}, "Why Don’t We Hear About the Ozone Hole Anymore?'' (\textbf{Writer, Host}). \href{https://www.youtube.com/watch?v=mQpa_NYXUGI}{[Video]}\\
+
+May $2017$ & \textit{Earthjustice}, "Young Director Raises Funds for Earthjustice through Project for Awesome'' (\textbf{Interview}). \href{http://earthjustice.org/blog/2017-may/director-raises-funds-for-earthjustice-through-project-for-awesome}{[Article]}\\
+
+
+\\
+& Visit my \href{https://twitter.com/zentouro}{Twitter} \includegraphics[height=9pt]{twitter.png}\\\
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\sc \textcolor{Red}{\large{Passions}}}
+ultimate frisbee $\bigDot$ cycling $\bigDot$ photography $\bigDot$ hiking $\bigDot$ blueberries $\bigDot$ music making
+
+
+\vspace{0.21 in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\centerline{\emph{Referees Available on Request}}
+
+\end{resume}
+\end{document}
+
+%% Built off of this template: https://flipdazed.github.io/blog/jobs/latex-cv-template 
