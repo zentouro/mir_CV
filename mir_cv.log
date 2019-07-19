@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.8)  7 JUL 2019 09:41
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.8)  19 JUL 2019 13:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -734,29 +734,60 @@ Overfull \hbox (2.36871pt too wide) in paragraph at lines 151--152
 el, Taking Your Educational Videos
  []
 
-Runaway argument?
-{ \textsf { \href {https://twitter.com/zentouro}{@zentouro} \ \ \ \includegraph
-ics \ETC.
-./mir_cv.tex:177: Paragraph ended before \f@nch@def was complete.
-<to be read again> 
-                   \par 
-l.177 ^^I^^I^^I^^I}}
-                    
-? 
-./mir_cv.tex:177: Emergency stop.
-<to be read again> 
-                   \par 
-l.177 ^^I^^I^^I^^I}}
-                    
-End of file on the terminal!
 
- 
+Overfull \hbox (3.5462pt too wide) in paragraph at lines 175--181
+[] 
+ []
+
+
+Overfull \hbox (3.5462pt too wide) in paragraph at lines 182--187
+[] 
+ []
+
+
+Overfull \hbox (3.5462pt too wide) in paragraph at lines 191--196
+[][] 
+ []
+
+
+Overfull \hbox (3.5462pt too wide) in paragraph at lines 201--207
+[][] 
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 217--218
+[]\TU/lmr/m/it/10 Earthjustice\TU/lmr/m/n/10 , ”Young Director Raises Funds for
+ Earthjustice
+ []
+
+
+Overfull \hbox (3.5462pt too wide) in paragraph at lines 212--223
+[][] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 237.
+File: twitter.png Graphic file (type bmp)
+<twitter.png>
+File: globe.png Graphic file (type bmp)
+<globe.png>
+File: mail.png Graphic file (type bmp)
+<mail.png>
+[2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 237.
+ (./mir_cv.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 237.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 237.
+Package rerunfilecheck Info: File `mir_cv.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 237.
+ ) 
 Here is how much of TeX's memory you used:
- 22070 strings out of 492916
- 413779 string characters out of 6133346
+ 22079 strings out of 492916
+ 413952 string characters out of 6133346
  517654 words of memory out of 5000000
- 25953 multiletter control sequences out of 15000+600000
- 537641 words of font info for 63 fonts, out of 8000000 for 9000
+ 25956 multiletter control sequences out of 15000+600000
+ 537665 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  40i,14n,49p,1069b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on mir_cv.pdf (1 page).
+
+Output written on mir_cv.pdf (2 pages).
