@@ -1,6 +1,7 @@
 \let\latexnofiles\nofiles
 \let\nofiles\relax
-\documentclass[margin, line, palatino, courier, 10pt]{res}
+\documentclass[margin, line]{res}
+%\usepackage[includefoot]{geometry}
 
 \usepackage[usenames, dvipsnames]{color}
 \usepackage{amsmath}
@@ -10,10 +11,12 @@
 \usepackage{hhline}
 \usepackage{amsmath, amsthm, amssymb, amsfonts}
 \usepackage[nodayofweek]{datetime}
-\newdateformat{mydate}{\twodigit{\THEDAY}{ }\shortmonthname[\THEMONTH], \THEYEAR}
 \usepackage{graphicx}
 \usepackage{etaremune}
 \usepackage[none]{hyphenat}
+
+\newdateformat{mydate}{\twodigit{\THEDAY}{ }\shortmonthname[\THEMONTH], \THEYEAR}
+
 
 
 \definecolor{darkgrey}{rgb}{0.169, 0.169, 0.169}
@@ -36,12 +39,20 @@
 
 
 %%% Headers %%%
-
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 \setlength{\headheight}{.8 cm}
+
+% the footer was printing way off the page, so adding this defines how long the body text can be per page (res class doesn't expect headers and footers so there didn't seem to be a way to not hard code this in) 
+% note to future me, make your CV with a class not published in the 1980s.....
+\textheight = 8in	
+\footskip = 1in
+
 \fancyhf{}
+
+\lfoot{\textit{\footnotesize \\ Updated: \today}}
+\rfoot{{\footnotesize \textcolor{darkgrey}{\textbf{Miriam Nielsen}} \\ Curriculum Vit\ae, Page \textbf{[\thepage]} of 3}}
 
 \rhead{		\textsf{ 
 				\href{https://twitter.com/zentouro}{@zentouro} 
@@ -52,8 +63,8 @@
 				\ \ 
 				}}
 
-\lfoot{\textit{\footnotesize \\ Updated: \today}}
-\rfoot{{\footnotesize \textcolor{darkgrey}{\textbf{Miriam Nielsen}} \\ Curriculum Vit\ae, Page \textbf{[\thepage]} of 2}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
 \newenvironment{list1}{
 	\begin{list}{\ding{113}}{%
@@ -70,6 +81,7 @@
 		\setlength{\leftmargin}{0.2in}}}{\end{list}}
 
 \begin{document} 
+
 
 %%% Name First Page %%%
 \name{
@@ -105,7 +117,7 @@ climate variability $\bigDot$  hydroclimate $\bigDot$  modelling $\bigDot$  clim
 \section{\sc \textcolor{Red}{\large{Research Experience}}}
 \vspace*{0.05in}
 \begin{tabular}{@{}p{1 in}p{4in}}
-Summer 2019  & \textbf{International Research Institute for Climate \& Society (IRI)}, Associate Researcher\\
+Summer 2019  & \textbf{International Research Institute for Climate \& Society (IRI)}, Associate \\
 & \href{GEO}{Systematic review of flood and related hazard vulnerability.  Developing a database of flash flood events and risk response. The project is aligned with NASA and the Group on Earth Observations (GEO) 2017-2019 work program for the Initiative for Global Flood Risk Monitoring.} \\
 & \hspace{0.2in} Advisor: Andrew Kruczkiewicz, IRI.\\
 & \href{SatWIN}{Designing and communicating SatWIN-ALERT project tools.} \\
@@ -136,23 +148,29 @@ $2015 - 2017$ & \textbf{The Verge}, Lead Science Director  \\
 
 \textit{\textbf{Submitted/in Preparation}}
 \vspace*{-0.1in}\\
-\begin{etaremune}[leftmargin=.2in,topsep=0in,parsep=0in]
+\begin{etaremune}[leftmargin=.2in,topsep=0in, parsep=0in]
 \item Kruczkiewicz, Andrew; Braun, Mélody; Greatrex, Helen; \textbf{Nielsen, Miriam}; \\ Hoffman-Hernandez, Laura; Llamanzares, Brian; Flamig, Zachary; McClain, Shanna: Moving from Availability to Use of Flood Risk and Flood Monitoring Data to Inform Decision Making for Preparedness and Response. AGU Books, (\textit{in Review 2018.})
 \end{etaremune}
 
 \section{\sc \textcolor{Red}{\large{Invited Presentations}}}
 \begin{etaremune}[leftmargin=.2in,topsep=0in,parsep=0in]
+\item \textbf{Nielsen, Miriam}; Greatrex, Helen; Kruczkiewicz, Andrew, A systematic review of flash flood risk, vulnerability and impact. \textit{American Meteorological Society Annual Meeting}, Boston, MA (\textit{Upcoming January 2020}).
 \item  Kruczkiewicz, Andrew; \textbf{Nielsen, Miriam},  Experiencing discrepancies in “reputable data” in the disaster management cycle. \textit{United Nations Group of Experts on Geographical Names: First Session}, NY, NY (May 2019). 
-\item  \textbf{Nielsen, Miriam}, Llamanzares, Brian, Global Flash Flood Risk. \textit{NASA Goddard Space Flight Center}, Greenbelt, MD (August 2018). 
-\item  \textbf{Nielsen, Miriam}, Llamanzares, Brian, Investigating Flash Flood Risk. \textit{The World Bank}, Washington, DC (July 2018). 
+\item  \textbf{Nielsen, Miriam}; Llamanzares, Brian, Global Flash Flood Risk. \textit{NASA Goddard Space Flight Center}, Greenbelt, MD (August 2018). 
+\item  \textbf{Nielsen, Miriam}; Llamanzares, Brian, Investigating Flash Flood Risk. \textit{The World Bank}, Washington, DC (July 2018). 
 \item  \textbf{Nielsen, Miriam}, Climate Change but make it Fashion. \textit{PBS Nerd Night, VidCon}, Anaheim, CA (July 2018).
-\item  \textbf{Nielsen, Miriam}, Ashe, Jabril, Harrison, Michael, Taking Your Educational Videos to the Next Level. \textit{SXSWedu}, Austin, TX (March 2018). \href{https://schedule.sxswedu.com/2018/events/PP76461"}{[Link]}
+\item  \textbf{Nielsen, Miriam}; Ashe, Jabril; Harrison, Michael, Taking Your Educational Videos to the Next Level. \textit{SXSWedu}, Austin, TX (March 2018). \href{https://schedule.sxswedu.com/2018/events/PP76461"}{[Link]}
 \item  \textbf{Nielsen, Miriam}, Environmental Sustainability through a Creative Lens. \textit{Rohatyn Center for Global Affairs Symposium}, Middlebury, VT (January, May 2014). 
 \end{etaremune}
 
 
-
 %%% HEADER FOR PAGE(S) 2+ %%%	
+
+\fancyhf{}
+
+\lfoot{\textit{\footnotesize \\ Updated: \today}}
+\rfoot{{\footnotesize \textcolor{darkgrey}{\textbf{Miriam Nielsen}} \\ Curriculum Vit\ae, Page \textbf{[\thepage]} of 3}}
+
 \lhead{	
 		 \textsf{ \textbf{ 
 				\Huge M\textcolor{Red}{N} \\
@@ -201,6 +219,29 @@ Summer 2019 & Union of Concerned Scientists Advocacy Mentorship\\
 Programming:& Python, \texttt{MATLAB}, R, HTML, CSS, \LaTeX \\
 Software/Tools:&  arcGIS, qGIS, Adobe Creative Suite, Git, IRI Data Library \\\\
 
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{\sc \textcolor{Red}{\large{Relevant \\ Coursework}}}
+
+\textit{\textbf{Graduate}}
+\vspace*{0.05in}\\
+\begin{tabular}{@{}p{2.5in}p{4in}}
+Quantitative Models & Climate Dynamics \& Variability \\
+Carbon Cycle & Regional Climate Dynamics\\
+Biological Oceanography & Environmental Data Analysis \\
+\end{tabular}
+
+\textit{\textbf{Undergraduate}}
+\vspace*{0.05in}\\
+\begin{tabular}{@{}p{2.5in}p{4in}}
+GIS and Remote Sensing & Data Structures \\
+Ecology and Evolution & Computer Architecture \\
+Oceanography & Mathematical Computing \\
+Biological Statistics & Computer Vision \\
+Differential equations & Information Visualization \\
 \end{tabular}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
